@@ -54,6 +54,7 @@ export class WalletController {
     for (let i = 0; i < count; i++) {
       wallet = this.generateWallet(i);
       accounts.push(wallet.address);
+      console.log("Account[", i, "] : ", wallet.address);
     }
     return accounts;
   }
