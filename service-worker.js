@@ -11,11 +11,11 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("/won-js/test_wallet/workbox-v3.6.3/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/won-js/test_wallet/workbox-v3.6.3"});
+importScripts("/test_wallet/workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "/test_wallet/workbox-v3.6.3"});
 
 importScripts(
-  "/won-js/test_wallet/precache-manifest.ce8b1ca6df31dd389a2d1087973a6025.js"
+  "/test_wallet/precache-manifest.a302a1c4d5187a03f6c449c2aeb86d2c.js"
 );
 
 workbox.clientsClaim();
@@ -29,7 +29,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/won-js/test_wallet/index.html", {
+workbox.routing.registerNavigationRoute("/test_wallet/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
